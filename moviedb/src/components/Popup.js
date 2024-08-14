@@ -11,12 +11,13 @@ function Popup({selected, closePopup}) {
                 </span>
             </h2>
             <p className='rating'>
-                Rating: {selected.imdbRating}
+                Rating: {selected.imdbRating} | {selected.Rated}
             </p>
             <div className='plot'>
                 <img src={selected.Poster}></img>
                 <p>{selected.Plot}</p>
             </div>
+            
             <button className='close' onClick={closePopup}>Close</button>
         </div>
     </section>
